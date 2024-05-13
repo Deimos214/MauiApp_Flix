@@ -57,9 +57,66 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\acao1.jpg" />
+	  <None Remove="Resources\Images\acao2.jpg" />
+	  <None Remove="Resources\Images\acao3.jpg" />
+	  <None Remove="Resources\Images\animacao1.jpg" />
+	  <None Remove="Resources\Images\animacao2.jpg" />
+	  <None Remove="Resources\Images\animacao3.jpg" />
+	  <None Remove="Resources\Images\aventura1.jpg" />
+	  <None Remove="Resources\Images\aventura2.jpg" />
+	  <None Remove="Resources\Images\aventura3.jpg" />
+	  <None Remove="Resources\Images\comedia1.jpg" />
+	  <None Remove="Resources\Images\comedia2.jpg" />
+	  <None Remove="Resources\Images\comedia3.jpg" />
+	  <None Remove="Resources\Images\documentario1.jpg" />
+	  <None Remove="Resources\Images\documentario2.jpg" />
+	  <None Remove="Resources\Images\documentario3.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Categorias\acao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\animacao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\aventura.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\comedia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\documentario.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\drama.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\ficcao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\guerra.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\infantil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\nacional.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\romance.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\suspense.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
