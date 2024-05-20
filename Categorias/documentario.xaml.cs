@@ -6,4 +6,19 @@ public partial class documentario : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void btndocumentario1_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btndocumentario2_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btndocumentario3_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

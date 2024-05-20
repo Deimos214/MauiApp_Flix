@@ -6,4 +6,19 @@ public partial class animacao : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void btnanimacao1_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnanimacao2_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnanimacao3_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

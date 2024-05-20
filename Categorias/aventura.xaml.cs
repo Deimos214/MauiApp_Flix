@@ -6,4 +6,19 @@ public partial class aventura : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void btnaventura1_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnaventura2_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnaventura3_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

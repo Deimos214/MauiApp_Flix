@@ -2,11 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp_Flix.Categorias.aventura"
-             Title="aventura">
+             Title="aventura"
+             BackgroundColor="#2f2f30">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="btnfilme" TargetType="ImageButton">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*, *"
+                  Padding="5"
+                  ColumnSpacing="2"
+                  RowSpacing="2">
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0"
+                             Style="{StaticResource btnfilme}"
+                             Source="aventura1.jpg" x:Name="btnaventura1" 
+                             Clicked="btnaventura1_Clicked"/>
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="0"
+                             Style="{StaticResource btnfilme}"
+                             Source="aventura2.jpg" x:Name="btnaventura2"
+                             Clicked="btnaventura2_Clicked"/>
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="1"
+                             Style="{StaticResource btnfilme}"
+                             Source="aventura3.jpg" x:Name="btnaventura3"
+                             Clicked="btnaventura3_Clicked"/>
+            </Grid>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>
